@@ -1,0 +1,246 @@
+# A walkthrough of Adventure in Style
+
+in
+get lamp
+light lamp
+plugh
+plover
+ne
+get pyramid
+s
+plover
+s
+get silver
+n
+plugh
+drop pyramid
+drop silver
+get bottle
+plugh
+s
+d
+bedquilt
+slab
+s
+d
+open bottle
+water plant
+u
+w
+u
+reservoir
+fill bottle with water
+s
+s
+d
+s
+d
+water plant
+u
+e
+d
+fill bottle with oil
+u
+w
+d
+climb
+w
+n
+oil door
+drop bottle
+open door
+n
+get trident
+w
+d
+se
+n
+w
+drop trident
+drop lamp
+e
+get emerald
+w
+get trident
+get lamp
+nw
+s
+get vase
+se
+e
+get pillow
+w
+ne
+e
+n
+open clam with trident
+d
+d
+get pearl
+u
+u
+s
+u
+e
+u
+n
+plugh
+drop pillow
+put vase on pillow
+drop trident
+drop pearl
+drop emerald
+xyzzy
+get rod
+e
+get cage
+pit
+e
+drop rod
+put bird in cage
+get rod
+w
+d
+n
+free bird
+drop cage
+sw
+w
+kill dragon
+get rug
+e
+e
+w
+get coins
+e
+s
+get jewelry
+n
+e
+w
+wave rod
+drop rod
+w
+get diamonds
+e
+e
+s
+get gold
+n
+y2
+d
+plugh
+drop rug
+drop coins
+drop jewelry
+drop diamonds
+drop gold
+get food
+get keys
+plugh
+s
+d
+bedquilt
+w
+w
+w
+d
+climb
+w
+get eggs
+n
+n
+w
+d
+sw
+u
+give eggs to troll
+ne
+ne
+barren
+in
+feed food to bear
+take chain
+w
+fork
+ne
+e
+get spices
+fork
+w
+w
+sw
+unchain bear
+sw
+sw
+sw
+d
+se
+se
+w
+w
+d
+climb
+w
+say fee fie foe foo
+get eggs
+s
+d
+u
+w
+u
+s
+e
+e
+n
+n
+plugh
+drop spices
+drop chain
+drop eggs
+plugh
+s
+s
+e
+w
+w
+w
+s
+e
+s
+s
+s
+n
+e
+e
+nw
+get chest
+se
+n
+d
+e
+e
+xyzzy
+drop chest
+plugh
+s
+d
+w
+d
+e
+get magazine
+e
+drop magazine
+wait
+wait
+wait
+wait
+wait
+wait
+sw
+get rod
+ne
+drop rod
+sw
+press button
+

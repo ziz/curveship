@@ -1,0 +1,7 @@
+w
+put the cloak on the hook
+take the hook
+e
+s
+read the message
+

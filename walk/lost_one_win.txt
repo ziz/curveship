@@ -1,0 +1,52 @@
+# 
+
+world tree
+go east
+i
+walk north
+go west
+world actions 
+go west
+go south
+go south
+run east
+go east
+nw
+examine the obelisk
+examine the flaneur
+inspect the trash collector
+eat the tortilla
+examine the fountain
+look
+examine the statue
+examine the tree
+z
+z
+z
+z
+z
+z
+z
+z
+z
+z
+concept @visitor tree
+world tree
+z
+z
+z
+z
+z
+z
+z
+z
+z
+examine the shirt
+examine the cup
+z
+z
+z
+z
+z
+z
+

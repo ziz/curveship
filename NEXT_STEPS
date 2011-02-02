@@ -1,0 +1,100 @@
+## NEXT STEPS for Curveship ##
+
+<> Implement syllepsis, narration by category, which will apply very well to
+recounting:
+"You wandered to many places: From X to Y, from there back to X, ..."
+"You picked up several things. In Y, you acquired ..."
+"You did some other things. In Y, you ..."
+Each of these can be determined through filters on actions.
+
+<> Replace the current parser (hacked together in a few days) with a new one
+that is more expandable.
+
+<> See if the use of '_' can indicate discourse entities that are not
+simulated, including a "don't worry about that" message for each.
+
+<> Allow multiple direct object inputs ("take keys and lamp") by serializing 
+them into commands that each have a single object.
+
+<> Add the "all" quantifier so that "take all" is translated into (for
+instance) "take keys; take lamp; take food; take bottle."
+
+<> Disambiguate "drink water" and "drink water" (and all similar commands)
+by elaborating the command to "drink water from the bottle" and "drink water 
+from the stream"
+
+<> Do recognition of items in phases. For the specific case of TAKE:
+
+1. NOTHELD & ACCESSIBLE
+2. NOTHELD & PROXIMATE
+3. NOTHELD & VISIBLE
+4. HELD
+5. KNOWN
+
+For EXAMINE:
+
+1. VISIBLE
+2. PROXIMATE
+3. KNOWN
+
+Step 1 recognizes all items such that actions can succeed. That is, TAKE cannot 
+work unless an item is NOTHELD & ACCESSIBLE. So the rest is really just to 
+improve the "error message" explaining that the PC cannot take an item. The 
+next step finds the most likely items that cannot be taken: Those in the room 
+(PROXIMATE) but in closed containers (so they are not ACCESSIBLE). A bottle in 
+a closed cupboard, whether visible or not, would be in this category. (Maybe 
+with plannig or better higher-level commands the PC *would* be able to take it, 
+but not in the current system.) The next step finds items in adjacent rooms 
+that can be seen (but not taken, because they are far away). The next includes 
+the PC's own possessions, which cannot be taken, but perhaps the player's 
+mistake in typing a command can be explained with refereance to what is HELD. 
+Finally, the search expands to all known items -- anything that has been 
+mentioned. This could lead to a helpful message such as "The adventurer hasn't 
+seen the ax since he was in the Valley."
+
+<> Allow "say" to match multiple words. A hack is in place now that has a 
+grammar line for one word, two words, three words, or four words.
+
+<> Add real support for pronoun resolution. Currently object pronouns
+are added as referring nouns, so "take it" will produce a disambiguation
+message. A simple but real model of pronoun resolution could be added
+with little trouble and would work well, because the occurrence of nouns 
+is tracked in this system during text generation via slots (simulated items
+such as [@buildind\o]) and non-simuated discourse entities (_the_road).
+However, the full syntactical structure of the sentence is not represented,
+so some useful information will be missing.
+
+<> A scoring system.
+
+<> An encumberance system.
+
+<> A way to allow things like the scoring system and encumberance system to
+be added modularly, without patching the main code base.
+
+<> An idea; Implement postures, based on one's ability to SIT and LIE,
+although this is often just a matter of being ON a supporter, not really a
+posture model.
+
+    stand
+    sit
+    squat
+    crouch
+    lie, possibly broken down to:
+        lie prone (lie prostrate, prostrate myself, lie face down)
+        lie supine (lie on my back)
+        lie accumbent (lie on my side)
+    kneel
+    hang from X
+    get on all fours (crawl)
+
+<> A suggestion: Allow the player (in some modes) to enter narrative statements
+that are similar to commands (and aren't general natural language) but could
+refer to any character: "I go east" "The punk looks at the trash." Perhaps this
+would map to the commanded actor being a set of some or all actors. Different
+tenses and aspects probably have to be recognized.
+
+<> Implement different levels of "explicit I" and "explicit you" as composable 
+output filters. (These are variations in narrating I noted during my 
+disseration work, having to do with how many signs of narrator and narratee
+are shown.)
+

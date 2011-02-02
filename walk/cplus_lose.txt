@@ -1,0 +1,30 @@
+# This actually leads to losing the game by messing up the message.
+
+put the mime in the massive sack
+world tree
+extricate the mime
+put the mime in the large sack
+put the massive sack in the large sack
+put the mime in the massive sack
+take the massive sack
+put the mime in the massive sack
+drop the massive sack
+put the mime in the massive sack
+put massive sack in the large sack
+go west
+get the lamp
+turn the lamp on
+examine the lamp
+snuff out the lamp
+e
+s
+e
+n
+w
+put the cloak on the hook
+put the lamp on the hook
+take the hook
+e
+s
+read the message
+
